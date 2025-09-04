@@ -20,4 +20,4 @@ age = input("How old are you?\n")
 
 subject = input("Whats your favorite color?\n")
 
-print("Your name is", name, "The number you picked was", numeral, "Another number you picked is", number, "")
+print("Your name is", name, "The number you picked was", numeral, "Another number you picked is", number, "What did you have for Breakfast?", breakfast, "What is your favorite color?", color,"What is your favorite school subject?", school, "What year is it?", year, "What color are your eyes?", eye, "How old are you?", age, "whats your favorite color?", color)
