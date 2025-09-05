@@ -26,8 +26,8 @@ answer = average/4
 
 print(num1, "+", num2 , "+", num3 , "+", num4, "=", answer)
 
-#List ALL of the different assignment operators (Give me the symbols and what it does)
-    #
+
+int(input("Give me a number"))
 
 #Why are expressions so important in programming
     #
