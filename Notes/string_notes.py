@@ -27,11 +27,11 @@ print("Welcome to my program", full_name + "!")
 #What makes something a string?
     # Symbols inside quotation marks
 #Why do we have strings?
-    # 
+    # Strings are a fundamental data type in coding because they are designed to represent and manipulate text
 #How do stupid proofing and sanitization relate to each other?
-    #
+    #They both correct user error
 #What is debugging?
-    #
+    # Fixing problems in my code
 #How do you debug the different types of errors?
     #
 #Describe what each of the methods below does:
