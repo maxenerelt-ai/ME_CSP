@@ -49,6 +49,7 @@ welcome()
 #where you can use the code somewhere else in the code without using a special variable
   #How to use return statements in a program
 #Define a function with a return type
+
 def believe(sentence):
     length = len(sentence)
     spot_1= random(0, length -1)
