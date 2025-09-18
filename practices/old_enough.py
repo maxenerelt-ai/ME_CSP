@@ -3,6 +3,10 @@
 age = int(input("What is your current age? : "))
 
 if age >= 18:
-    print("You are eligible to vote!")
+    print("You can vote!")
 elif age >= 16:
-    print
+    print("You can drive!")
+elif age >= 15:
+    print("You can get a learners permit!")
+else:
+    print("You can go to school!")
