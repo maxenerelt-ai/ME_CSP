@@ -6,7 +6,7 @@
 # What are the two types of loops?
     #  Regular loops and While loops
 # What is iteration
-    #  helps perform repetitive tasks
+    #  helps perform repetitive tasks one instance keeping track of how many times we loop ever it
 # What are lists? 
     #  ordered/neat collection of items
 # How do you make lists in python? 
