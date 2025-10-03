@@ -5,7 +5,6 @@ int main(void){
     int num = 4;
     float pi = 3.14;
     char grade = 'A'; // Char will only hold one letter
-    char name[]= 'Max Enerelt'; // semicolon acts as a period
     //bool passing = true
 
     printf("%d", num);
@@ -13,28 +12,41 @@ int main(void){
     return 0;
 }
 
-
+/*
+ Why the & while scanf 
+*/
 
 //What is the main difference between declaring variables in Python and C?
     // How in python its easy you do variable name = variable thingy nut in c you need what type of data the variable will hold like int and a semicolon on the end
 
 //In C, what is the purpose of specifying a data type when declaring a variable?
-    //
+    // Cause C is a strict code where you have to specify what is in the variables or else it will break the code
 
 //List three common data types used in C and their corresponding format specifiers for printf().
-    //
+    // int %d float %f double %lf char %c list of characters for a string %s
 
 //How do you declare and initialize an integer variable named "age" with the value 25 in C?
-    //
+    // int age = 25
+    // printf("%d", age); 
 
 //What is the difference between printf() and scanf() functions in C?
-    //
+    // printf uses variables for a print statement. scanf uses printf to make a user input scanf cannot use a space
 
 //Write a C program that asks the user for their name and age, then prints a greeting message with their information.
-    //
+    
+    /*#include <stdio.h>
+
+    int main(void){
+    char name;
+    int age;
+    printf("Hello what is your name and age?");
+    scanf("%s &name", "%d &age");
+    printf("%s is" "%d\n", name, age);
+    }
+    /*
 
 //How do you add comments in C? What are the two types of comments?
-    //
+    // a double slash // or a   /* */ //anything inside it becomes a comment
 
 //What is the purpose of the #include <stdio.h> line at the beginning of a C program?
     //
