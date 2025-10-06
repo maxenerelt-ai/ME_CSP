@@ -49,7 +49,7 @@ int main(void){
     // a double slash // or a   /* */ //anything inside it becomes a comment
 
 //What is the purpose of the #include <stdio.h> line at the beginning of a C program?
-    //
+    // taking your standard library input and out puts.
 
 //In C, what is the significance of the main() function?
     //
@@ -70,4 +70,4 @@ int main(void){
     //
 
 //How do you declare a constant in C? Provide an example.
-    //
+    // const at the front cannot be changed
