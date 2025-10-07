@@ -1,0 +1,82 @@
+import random
+
+def game_board():
+    print(board[0] + "|" + board[1] + "|" + board[2])
+    print("-----")
+    print(board[3] + "|" + board[4] + "|" + board[5])
+    print("-----")
+    print(board[6] + "|" + board[7] + "|" + board[8])
+
+def change_board(num, turn):
+    num -= 1
+    if board[num] == "-":
+        board[num] = turn
+        return True
+    else:
+        return False
+
+def check_winner():
+    # Possible winning combinations Santiago Max Sophie
+    combos = [
+        (0,1,2), (3,4,5), (6,7,8),  # rows
+        (0,3,6), (1,4,7), (2,5,8),  # columns
+        (0,4,8), (2,4,6)            # diagonals
+    ]
+    for a, b, c in combos:
+        if board[a] == board[b] == board[c] != "-":
+            return board[a]
+    if "-" not in board:
+        return "Tie"
+    return None
+
+# Variables
+user_input = input("Hey welcome to our tic tac toe game! Please choose X or O: ").upper()
+while user_input not in ["X", "O"]:
+    user_input = input("Invalid choice. Please choose X or O: ").upper()
+
+ai_choice = "O" if user_input == "X" else "X"
+numbers_available = [1,2,3,4,5,6,7,8,9]
+turns = 1
+board = ["-"] * 9
+game_end = False
+
+print(f"You picked {user_input}!")
+print(f"AI will be {ai_choice}.")
+
+while not game_end:
+    game_board()
+    if (turns % 2 == 1 and user_input == "X") or (turns % 2 == 0 and user_input == "O"):
+        # Player turn
+        try:
+            player_choice = int(input("Choose a number from 1 to 9: "))
+            if player_choice not in numbers_available:
+                print("Spot already taken or invalid. Try again.")
+                continue
+        except ValueError:
+            print("Invalid input. Please enter a number 1-9.")
+            continue
+
+        if change_board(player_choice, user_input):
+            numbers_available.remove(player_choice)
+            turns += 1
+        else:
+            print("Spot already taken. Choose another.")
+            continue
+
+    else:
+        # AI turn
+        ai_pick = random.choice(numbers_available)
+        print(f"AI picks {ai_pick}")
+        change_board(ai_pick, ai_choice)
+        numbers_available.remove(ai_pick)
+        turns += 1
+
+    # Check for winner or tie combo Charlie
+    winner = check_winner()
+    if winner:
+        game_board()
+        if winner == "Tie":
+            print("It's a tie!")
+        else:
+            print(f"{winner} wins the game!")
+        game_end = True
