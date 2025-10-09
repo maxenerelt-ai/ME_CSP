@@ -18,6 +18,9 @@ int main(void){
     printf("What is your favorite color: %s\n", color);
     printf("What is the schools name: %s\n", school_name);
     printf("What is the year: %d\n", year);
+    printf("What is your eye color: %s\n", eye_color);
+    printf("How old are you: %d\n", age);
+    printf("What is your favorite subject: %s\n", fav_subject);
 
 
 
