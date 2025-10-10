@@ -30,13 +30,13 @@ How do you round a float to the nearest integer in C?
 What is type casting in C? Provide an example of explicit type casting.
     Specifying the type of data the output will be shown above
 How do compound assignment operators work in C? List three examples.
-
+Compound assignments work as symbols to add things together or minus. - , *, +
 What is the purpose of the math.h library? Name three functions it provides.
     To get more math related operators to use in your code. 
 How do you print a float with a specific number of decimal places using printf()?
-
+By using float and %.number of decimals you want
 What happens when you mix integer and float operations in C?
-
+The code runs and the code used will go through and give an output with or without a decimal.
 
 */
 
