@@ -10,14 +10,14 @@ int main(void){
     printf("Please tell me your last name: \n");
     scanf("%s", last_name);
     
-    printf("[%s]", name);
+    printf("[%s]", full_name);
 
     strcat(full_name, name);
-    printf("[%s]", name);
+    printf("[%s]", full_name);
     strcat(full_name, " ");
     strcat(full_name, last_name);
     strcat(name, last_name);
-    printf("[%s]", name);
+    printf("[%s]", full_name);
 
 
     return 0;
