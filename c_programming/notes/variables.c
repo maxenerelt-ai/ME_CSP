@@ -9,6 +9,8 @@ int main(void){
 
     printf("%d", num);
 
+    printf("%d")
+
     return 0;
 }
 
@@ -52,22 +54,24 @@ int main(void){
     // taking your standard library input and out puts.
 
 //In C, what is the significance of the main() function?
-    //
+    // It is where the code runs without it your code wont run or function
 
 //Write a C program that calculates the area of a rectangle. Ask the user to input the length and width, then display the result.
-    //
+    // int length; int width; printf("What is the width: \n"); scanf("%d", length); printf("What is the length: \n"); scanf("%d", length); area = length * width; printf("The area is: %d\n", area); 
+    
 
 //What is the difference between %d and %f format specifiers in printf()?
-    //
+    //%d is for numeral operators without a decimal and %f is also used for numerical operators but no full numbers only decimals
 
 //How do you print a newline character in C?
-    //
+    //  by using \n
 
 //Write a C program that converts temperature from Celsius to Fahrenheit. Ask the user for input in Celsius and display the result in Fahrenheit.
-    //
+    // int celcius; printf("Give me the temperature in Celsius: \n"); scanf("%d", celcius); int fahrenheit = celcius * 1.8 + 32; printf("The temperature in Fahrenheit is: %d\n", fahrenheit)
 
 //What is the purpose of the & symbol when using scanf() to get user input?
-    //
+    // has to add it to the variable serving as an adding
 
 //How do you declare a constant in C? Provide an example.
-    // const at the front cannot be changed
+    // by using const in front 
+    // const int temperature = 100
