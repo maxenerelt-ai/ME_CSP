@@ -4,15 +4,17 @@
 
 int main(void){
     char name[50];
-    char thing = ">>>";
-    char thing1 = "<<<";
+    char decor[100];
+
     printf("What is your name: \n");
-    scanf("%s", &name);
+    scanf("%s", name);
 
-    strcat("[%s]", name);
+    strcat(decor,"<<<");
+    strcat(decor,name);
+    strcat(decor, ">>>");
+  
 
-    
+    printf("Your name: %s\n", decor);
 
-
-    return 0;
+        return 0;
 }
